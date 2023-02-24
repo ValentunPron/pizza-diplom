@@ -21,7 +21,6 @@ const TokensHandler = {
 
          return jwtMessages.success
       } catch (error) {
-         // если токен валиден, но истекло время
          if (error.expiredAt) {
             return jwtMessages.timeExpired
          }

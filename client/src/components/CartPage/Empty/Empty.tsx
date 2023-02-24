@@ -14,7 +14,7 @@ const Empty: FC = () => {
             <p className={s.subtle}>Для того чтобы это сделать, перейдите на главную страницу</p>
          </div>
          <div className={s.imageContainer}>
-            <img src={`${path}/images/cart-person.png`} className={s.image} alt={'cart-person'} />
+            <img src={`../images/cart-person.png`} className={s.image} alt={'cart-person'} />
          </div>
       </div>
    );

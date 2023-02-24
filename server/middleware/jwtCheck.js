@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 
 const jwtMessages = require('../constants/jwt');
-const TokensHandler = require('../utils/tokensHandler')
+const TokensHandler = require('../utils/tokensHandler');
 
 module.exports = async function (req, res, next) {
 

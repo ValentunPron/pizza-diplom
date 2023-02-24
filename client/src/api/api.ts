@@ -42,7 +42,7 @@ export const user = {
 
    authUser: async (data: IUserData) => {
       try {
-         const response = await instance.post(Urls.userAuth, { ...data }, {
+         const response = await instance.post(Urls.userReg, { ...data }, {
             headers: { 'Content-Type': 'application/json;charset=utf-8', 'Access-Control-Allow-Origin': 'http://localhost:3000' },
          });
 
@@ -61,7 +61,7 @@ export const user = {
    createUser: async (data: IUserData) => {
       try {
          const response = await instance.post(Urls.userReg, { ...data }, {
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
+            headers: { 'Content-Type': 'application/json;charset=utf-8', 'Access-Control-Allow-Origin': 'http://localhost:3000' },
          });
 
          return response.data.message;
